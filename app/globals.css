@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forest: #1B4D2E;
+  --color-forest-light: #2D6A2D;
+  --color-cream: #F4F7F4;
+  --color-dark: #2C2C2C;
+  --color-gold: #FBBF24;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --animate-slide-in: slide-in 0.3s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: #2C2C2C;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Prose styles for About page */
+.prose p {
+  margin-bottom: 1.25em;
+  line-height: 1.75;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Service card hover */
+.service-card {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.service-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
