@@ -46,7 +46,7 @@ export default function ServiceFilter({
       </div>
 
       {/* Cards */}
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {(active === "All Services" || active === "Lawn & Yard Care") && lawnCards}
         {(active === "All Services" || active === "Landscape & Property Services") && landscapeCards}
       </div>

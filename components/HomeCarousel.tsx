@@ -42,7 +42,7 @@ export default function HomeCarousel({ images }: { images: string[] }) {
                 alt={file.replace(/[-_]/g, " ").replace(/\.[^.]+$/, "")}
                 width={600}
                 height={400}
-                className="h-[380px] w-full object-cover object-center"
+                className="h-[380px] w-full object-cover object-center transition-all duration-300 ease-in-out hover:brightness-115 hover:scale-[1.03]"
               />
             </button>
           ))}

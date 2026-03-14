@@ -92,23 +92,25 @@ export default function ServicePageLayout({
 
       {/* Optional Callout */}
       {callout && (
-        <section style={{ backgroundColor: "#f0f4f0", padding: "70px 0" }}>
+        <section className="bg-white" style={{ padding: "0 0 90px" }}>
           <div style={{ maxWidth: "860px", margin: "0 auto", padding: "0 40px" }}>
-            <h2
-              className="text-2xl font-bold sm:text-3xl"
-              style={{ color: "#2d5a27", borderLeft: "4px solid #2d5a27", paddingLeft: "16px" }}
-            >
-              {callout.headline}
-            </h2>
-            <p className="mt-5 text-lg leading-relaxed text-dark/80">
-              {callout.body}
-            </p>
+            <div style={{ borderLeft: "4px solid #2d5a27", backgroundColor: "#ffffff", padding: "32px 36px", boxShadow: "0 1px 8px rgba(0,0,0,0.06)", borderRadius: "0 12px 12px 0" }}>
+              <h2
+                className="text-2xl font-bold sm:text-3xl"
+                style={{ color: "#2d5a27" }}
+              >
+                {callout.headline}
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-dark/80">
+                {callout.body}
+              </p>
+            </div>
           </div>
         </section>
       )}
 
       {/* Why It Matters */}
-      <section style={{ backgroundColor: callout ? "#ffffff" : "#f0f4f0", padding: "90px 0" }}>
+      <section style={{ backgroundColor: "#f0f4f0", padding: "90px 0" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto", padding: "0 40px" }}>
           <h2
             className="text-2xl font-bold sm:text-3xl"

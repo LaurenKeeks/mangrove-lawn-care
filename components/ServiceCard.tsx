@@ -21,7 +21,7 @@ export const services: ServiceData[] = [
     slug: "/lawn-mowing-jacksonville",
     shortDesc: "Consistent, precise cuts on a schedule you can count on.",
     fullDesc:
-      "Regular mowing is the foundation of a healthy lawn. We use push mowers to deliver a precise, even cut that's gentler on your turf and fence line. No scalping, no ruts, no missed strips. We service your yard on a consistent schedule so it never gets away from you.",
+      "Regular mowing is the foundation of a healthy lawn. We use push mowers for a precise, even cut that is gentler on your turf. No scalping, no ruts, no missed strips. Just consistent service so your yard never gets away from you.",
     image: "mowing.jpg",
   },
   {
@@ -160,7 +160,7 @@ function ServicePhoto({ image, title, position = "center", height = "h-[350px]" 
         alt={title}
         width={600}
         height={400}
-        className={`${height} w-full object-cover`}
+        className={`${height} w-full object-cover rounded-xl`}
         style={{ objectPosition: position }}
       />
     );
@@ -205,13 +205,13 @@ export function ServiceCardFull({ service }: { service: ServiceData }) {
     <Link
       href={service.slug}
       id={service.anchor}
-      className="block service-card overflow-hidden rounded-2xl bg-white transition-all duration-200 ease-in-out hover:-translate-y-1 scroll-mt-20"
+      className="block service-card transition-all duration-200 ease-in-out hover:-translate-y-1 scroll-mt-20"
     >
       <ServicePhoto image={service.image} title={service.title} position={service.imagePosition} height="h-[280px]" />
-      <div className="flex flex-col p-8" style={{ minHeight: "220px" }}>
-        <h2 className="text-2xl font-bold text-dark">{service.title}</h2>
-        <p className="mt-3 text-dark/70 leading-relaxed flex-grow">{service.fullDesc}</p>
-        <span className="mt-4 inline-flex items-center text-sm font-semibold text-forest">
+      <div className="flex flex-col pt-3">
+        <h2 className="text-xl font-bold text-dark">{service.title}</h2>
+        <p className="mt-2 text-sm text-dark/70 leading-relaxed flex-grow">{service.fullDesc}</p>
+        <span className="mt-3 inline-flex items-center text-sm font-semibold text-forest">
           Learn More &rarr;
         </span>
       </div>

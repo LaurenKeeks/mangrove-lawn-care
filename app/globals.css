@@ -41,11 +41,3 @@ h1, h2, h3, h4 {
 .prose p:last-child {
   margin-bottom: 0;
 }
-
-/* Service card hover */
-.service-card {
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-.service-card:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}

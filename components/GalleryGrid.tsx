@@ -91,9 +91,8 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
               alt={photo.file.replace(/[-_]/g, " ").replace(/\.[^.]+$/, "")}
               width={600}
               height={800}
-              className="h-full w-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-[1.03]"
+              className="h-full w-full object-cover object-center transition-all duration-300 ease-in-out group-hover:scale-[1.03] group-hover:brightness-110"
             />
-            <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/15" />
           </button>
         ))}
       </div>
