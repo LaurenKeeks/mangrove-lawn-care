@@ -47,7 +47,7 @@ const homepageServices = [
   findService("tree-trimming"),
   findService("maintenance"),
   findService("leaf-removal"),
-  findService("landscape-bed-installation"),
+  { ...findService("landscape-bed-installation"), shortDesc: "Fresh rock, defined edging, and clean bed layouts for a sharp, low-maintenance look." },
 ];
 
 export default function HomePage() {
@@ -157,24 +157,23 @@ export default function HomePage() {
               <Link href="/services" className="font-semibold underline" style={{ color: "#2d5a27" }}>View all services</Link> to see the full list.
             </p>
           </div>
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4" style={{ gap: "30px" }}>
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4" style={{ columnGap: "30px", rowGap: "45px" }}>
             {homepageServices.map((s) => (
               <Link
                 key={s.title}
                 href={s.slug}
-                className="group overflow-hidden rounded-xl bg-white transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-                style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.08)" }}
+                className="group transition-all duration-200 ease-in-out hover:-translate-y-1"
               >
                 <img
                   src={`/photos/services/${s.image}`}
                   alt={s.title}
-                  className="h-[220px] w-full object-cover"
+                  className="h-[220px] w-full object-cover rounded-xl"
                   style={{ objectPosition: s.imagePosition || "center" }}
                 />
-                <div className="p-5 pb-6">
+                <div className="pt-2">
                   <h3 className="font-bold font-sans text-base" style={{ color: "#1a1a1a" }}>{s.title}</h3>
                   <p className="mt-1 text-sm text-dark/70">{s.shortDesc}</p>
-                  <span className="inline-block font-semibold" style={{ color: "#2d5a27", fontSize: "0.9rem", marginTop: "12px" }}>
+                  <span className="inline-block font-semibold" style={{ color: "#2d5a27", fontSize: "0.9rem", marginTop: "6px" }}>
                     Learn More &rarr;
                   </span>
                 </div>
