@@ -120,7 +120,7 @@ export default function Navbar({
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-gray-100 bg-white px-4 pb-4 lg:hidden">
+        <div className="fixed inset-0 top-[60px] z-50 bg-white px-6 pt-6 pb-8 overflow-y-auto lg:hidden">
           {navLinks.map((link) => {
             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
@@ -128,7 +128,7 @@ export default function Navbar({
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`block py-3 text-base font-medium border-b border-gray-50 ${
+                className={`block py-3.5 text-lg font-medium border-b border-gray-100 ${
                   isActive ? "text-forest font-semibold" : "text-dark hover:text-forest"
                 }`}
               >
@@ -138,7 +138,7 @@ export default function Navbar({
           })}
           <a
             href="tel:9044770490"
-            className="mt-3 block py-2 text-base font-semibold text-forest"
+            className="mt-5 block py-2 text-lg font-semibold text-forest"
           >
             (904) 477-0490
           </a>
@@ -147,7 +147,7 @@ export default function Navbar({
               setMobileOpen(false);
               onOpenEstimate();
             }}
-            className="mt-3 w-full rounded-full bg-forest px-5 py-3 text-sm font-semibold text-white hover:bg-forest-light cursor-pointer"
+            className="mt-4 w-full rounded-full bg-forest px-5 py-3.5 text-base font-semibold text-white hover:bg-forest-light cursor-pointer"
           >
             Get a Free Estimate
           </button>
