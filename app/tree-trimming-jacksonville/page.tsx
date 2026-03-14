@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function TreeTrimmingPage() {
   return (
     <ServicePageLayout
-      heroImage="tree-trimming.jpg"
+      heroImage="tree-trimming1.jpg"
       heroImagePosition="center 20%"
       headline="Tree Trimming & Pruning in Jacksonville, FL"
       subline="Keep low branches trimmed, your yard looking clean, and your property protected."
@@ -23,6 +23,10 @@ export default function TreeTrimmingPage() {
         "Available as a one-time service or recurring seasonal maintenance",
         "Honest assessment of work scope before any service begins",
       ]}
+      callout={{
+        headline: "Crepe Myrtle Pruning Done Right",
+        body: "Overgrown, leggy, or hacked-up crepe myrtles? We fix that the proper way — no \"crepe murder\" here. Aggressive topping damages the tree's structure and leads to weak, cluttered regrowth. We prune crepe myrtles correctly by removing crossed branches, thinning the canopy, and shaping for natural form. The result is a healthier tree that flowers better and actually looks the way it should.",
+      }}
       whyItMatters={[
         "Jacksonville's storm season puts real stress on trees with heavy, overgrown limbs. Branches that hang over your roof or push against your home can cause damage during high winds. Keeping trees properly trimmed reduces that risk significantly.",
         "Beyond safety, clean trees simply make a yard look better. Overgrown canopy growth can shade out grass beneath it, drop debris constantly, and make a property feel cluttered and unkempt. Regular light pruning keeps trees healthy and your yard looking well managed.",

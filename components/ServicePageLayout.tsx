@@ -1,6 +1,11 @@
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 
+interface CalloutBlock {
+  headline: string;
+  body: string;
+}
+
 interface ServicePageLayoutProps {
   heroImage: string;
   heroImagePosition?: string;
@@ -8,6 +13,7 @@ interface ServicePageLayoutProps {
   subline: string;
   intro: string;
   includedItems: string[];
+  callout?: CalloutBlock;
   whyItMatters: string[];
   whyMangrove: string;
 }
@@ -19,6 +25,7 @@ export default function ServicePageLayout({
   subline,
   intro,
   includedItems,
+  callout,
   whyItMatters,
   whyMangrove,
 }: ServicePageLayoutProps) {
@@ -83,8 +90,25 @@ export default function ServicePageLayout({
         </div>
       </section>
 
+      {/* Optional Callout */}
+      {callout && (
+        <section style={{ backgroundColor: "#f0f4f0", padding: "70px 0" }}>
+          <div style={{ maxWidth: "860px", margin: "0 auto", padding: "0 40px" }}>
+            <h2
+              className="text-2xl font-bold sm:text-3xl"
+              style={{ color: "#2d5a27", borderLeft: "4px solid #2d5a27", paddingLeft: "16px" }}
+            >
+              {callout.headline}
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-dark/80">
+              {callout.body}
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* Why It Matters */}
-      <section style={{ backgroundColor: "#f0f4f0", padding: "90px 0" }}>
+      <section style={{ backgroundColor: callout ? "#ffffff" : "#f0f4f0", padding: "90px 0" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto", padding: "0 40px" }}>
           <h2
             className="text-2xl font-bold sm:text-3xl"

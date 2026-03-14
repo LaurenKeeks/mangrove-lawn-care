@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
-import { services, ServiceCardFull } from "@/components/ServiceCard";
+import { services, newServices, ServiceCardFull } from "@/components/ServiceCard";
+import type { ServiceData } from "@/components/ServiceCard";
+import ServiceFilter from "@/components/ServiceFilter";
 
 export const metadata: Metadata = {
   title: "Lawn Care Services in Jacksonville, FL | Mangrove Lawn Care",
@@ -13,6 +15,33 @@ export const metadata: Metadata = {
   },
 };
 
+const allServices = [...services, ...newServices];
+
+/* Helper to find a service by anchor */
+function findService(anchor: string): ServiceData {
+  return allServices.find((s) => s.anchor === anchor)!;
+}
+
+const lawnAndYardCare = [
+  findService("mowing"),
+  findService("edging"),
+  findService("weed-control"),
+  findService("leaf-removal"),
+  findService("maintenance"),
+];
+
+const landscapeAndProperty = [
+  findService("shrubs"),
+  findService("weeds"),
+  findService("mulching"),
+  findService("landscape-bed-installation"),
+  findService("tree-trimming"),
+  findService("tree-debris-removal"),
+  findService("gutter-cleaning"),
+  findService("irrigation-checkup"),
+  findService("artificial-turf-cleaning"),
+];
+
 export default function ServicesPage() {
   return (
     <main>
@@ -22,13 +51,6 @@ export default function ServicesPage() {
           <h1 className="text-4xl font-bold sm:text-5xl">
             Lawn Care Services in Jacksonville, FL
           </h1>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-white/85">
-            At Mangrove Lawn Care, we specialize in keeping Jacksonville
-            residential lawns healthy, manicured, and looking their absolute best
-            year-round. Florida&apos;s climate is demanding. The heat, humidity,
-            and year-round growth cycle mean your lawn needs consistent,
-            knowledgeable care. That&apos;s exactly what we deliver.
-          </p>
           <div className="mt-8">
             <CTAButton variant="white">
               Get a Free Estimate
@@ -37,15 +59,17 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service Detail Cards — 4x2 grid */}
-      <section className="bg-white pt-10 pb-20">
+      {/* Service Cards with Filter */}
+      <section className="bg-white" style={{ padding: "60px 0 80px" }}>
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="grid gap-6 sm:grid-cols-2">
-            {services.map((service) => (
+          <ServiceFilter
+            lawnCards={lawnAndYardCare.map((service) => (
               <ServiceCardFull key={service.title} service={service} />
             ))}
-          </div>
-
+            landscapeCards={landscapeAndProperty.map((service) => (
+              <ServiceCardFull key={service.title} service={service} />
+            ))}
+          />
         </div>
       </section>
 

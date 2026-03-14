@@ -16,65 +16,63 @@ export const metadata: Metadata = {
   },
 };
 
-/* Category mapping based on photo content */
 /* Category mapping — null means "All only" (no specific filter) */
 const categoryMap: Record<string, GalleryCategory> = {
   // Lawn Mowing — freshly mowed lawns, clean edging, mow lines
-  "551354867_122145605198813364_8200476976717869148_n.jpg": "Lawn Mowing",   // sunset lawn, clean mow
-  "601479383_122155033532813364_8571075959163200626_n.jpg": "Lawn Mowing",   // large yellow house, mowed front
-  "603041374_122155033598813364_6667557086420651834_n.jpg": "Lawn Mowing",   // yellow house backyard, mowed
-  "603856790_122155558436813364_2521576013533013309_n.jpg": "Lawn Mowing",   // clean edged lawn at sidewalk
-  "605121543_122155460756813364_574793769256484288_n.jpg": "Lawn Mowing",    // front yard clean mow
-  "611183040_122156787716813364_3378616182010680776_n.jpg": "Lawn Mowing",   // crew with blower, mow lines
-  "611238740_122156707802813364_43058194579447723_n.jpg": "Lawn Mowing",     // front driveway, clean mow
-  "618022792_122157774080813364_682682378710802066_n.jpg": "Lawn Mowing",    // large property, mowed
-  "623786306_122158736732813364_4140782463402283624_n.jpg": "Lawn Mowing",   // crisp lawn edges at sidewalk
-  "640410394_17866103811584377_3020803320362143400_n.jpg": "Lawn Mowing",    // house front, mowed
-  "lawn_gallery9.jpeg": "Lawn Mowing",    // fresh mowed lawn
-  "lawn_gallery10.jpeg": "Lawn Mowing",   // large lawn with mow lines
-  "lawn_gallery11.png": "Lawn Mowing",    // clean mowed front yard
-  "lawn_gallery12.jpeg": "Lawn Mowing",   // mowed neighborhood sidewalk
-  "lawn_gallery13.jpeg": "Lawn Mowing",   // mowed with sidewalk
-  "lawn_gallery14.jpeg": "Lawn Mowing",   // edged curb line
+  "551354867_122145605198813364_8200476976717869148_n.jpg": "Lawn Mowing",
+  "579680180_122150939282813364_171760724997158231_n.jpg": "Lawn Mowing",
+  "601479383_122155033532813364_8571075959163200626_n.jpg": "Lawn Mowing",
+  "603041374_122155033598813364_6667557086420651834_n.jpg": "Lawn Mowing",
+  "603856790_122155558436813364_2521576013533013309_n.jpg": "Lawn Mowing",
+  "605121543_122155460756813364_574793769256484288_n.jpg": "Lawn Mowing",
+  "611183040_122156787716813364_3378616182010680776_n.jpg": "Lawn Mowing",
+  "611238740_122156707802813364_43058194579447723_n.jpg": "Lawn Mowing",
+  "618022792_122157774080813364_682682378710802066_n.jpg": "Lawn Mowing",
+  "623786306_122158736732813364_4140782463402283624_n.jpg": "Lawn Mowing",
+  "640410394_17866103811584377_3020803320362143400_n.jpg": "Lawn Mowing",
+  "641181665_17866103820584377_3295983278069066478_n.jpg": "Lawn Mowing",
+  "lawn_gallery10.jpeg": "Lawn Mowing",
+  "lawn_gallery11.png": "Lawn Mowing",
+  "lawn_gallery12.jpeg": "Lawn Mowing",
+  "lawn_gallery13.jpeg": "Lawn Mowing",
+  "lawn_gallery14.jpeg": "Lawn Mowing",
 
-  // Landscaping & Beds — planting beds, rock/stone, landscape design
-  "lawn_gallery3.png": "Landscaping & Beds",                                 // entryway mulch beds with shrubs
-  "Screenshot 2026-03-13 at 5.38.11 PM.png": "Landscaping & Beds",          // white rock bed with new plants
-  "Screenshot 2026-03-13 at 5.38.18 PM.png": "Landscaping & Beds",          // white rock bed (another angle)
-  "Screenshot 2026-03-13 at 5.39.50 PM.png": "Landscaping & Beds",          // crape myrtle, landscape bed
-  "605904696_122156142242813364_7447782379553128760_n.jpg": "Landscaping & Beds", // new plantings with stepping stones
-  "642497226_17866258428584377_6620252600738237372_n.jpg": "Landscaping & Beds",  // crape myrtle with shrubs in bed
+  // Shrubs & Hedges — hedge trimming, shaped shrubs, boxwoods
+  "551382537_122145606110813364_3248806646172863167_n.jpg": "Shrubs & Hedges",
+  "552888823_122145606464813364_9210274602584555502_n.jpg": "Shrubs & Hedges",
+  "586158204_122151811484813364_5110169826311509405_n.jpg": "Shrubs & Hedges",
+  "586297474_122151811514813364_3131770740286436774_n.jpg": "Shrubs & Hedges",
+  "lawn_gallery1.png": "Shrubs & Hedges",
+  "lawn_gallery6.png": "Shrubs & Hedges",
+  "lawn_gallery7.png": "Shrubs & Hedges",
+  "lawn_gallery8.jpeg": "Shrubs & Hedges",
+  "lawn_gallery15.jpeg": "Shrubs & Hedges",
 
   // Mulching — fresh mulch application, mulch rings
-  "lawn_gallery2.png": "Mulching",        // tropical plants in fresh mulch bed
-  "lawn_gallery5.png": "Mulching",        // mulch ring around tree
-  "lawn_gallery7.png": "Mulching",        // full property with mulch work
-  "lawn_gallery8.jpeg": "Mulching",       // mulch beds along house front
-  "552888823_122145606464813364_9210274602584555502_n.jpg": "Mulching",      // trimmed hedges with fresh mulch
-  "553790281_122145606446813364_6347760948194781855_n.jpg": "Mulching",      // shrubs with mulch bed
-  "605664822_122156292788813364_9055083956354490192_n.jpg": "Mulching",      // tree with mulch ring at sunset
+  "604877457_122156142290813364_7557052745560944232_n.jpg": "Mulching",
+  "605904696_122156142242813364_7447782379553128760_n.jpg": "Mulching",
+  "lawn_gallery2.png": "Mulching",
+  "lawn_gallery3.png": "Mulching",
+  "lawn_gallery5.png": "Mulching",
+  "tree-trimming copy.jpeg": "Mulching",
 
-  // Shrubs & Hedges — hedge trimming, shaped shrubs
-  "lawn_gallery1.png": "Shrubs & Hedges",   // trimmed hedges along house
-  "lawn_gallery6.png": "Shrubs & Hedges",   // neatly trimmed hedge row under windows
-  "lawn_gallery15.jpeg": "Shrubs & Hedges", // shrub bed by window
-  "551382537_122145606110813364_3248806646172863167_n.jpg": "Shrubs & Hedges", // shrubs by window
-  "579680180_122150939282813364_171760724997158231_n.jpg": "Shrubs & Hedges",  // mowed backyard with hedges
-  "586158204_122151811484813364_5110169826311509405_n.jpg": "Shrubs & Hedges", // round boxwoods with brick edging
-  "586297474_122151811514813364_3131770740286436774_n.jpg": "Shrubs & Hedges", // shaped boxwoods with edging
-  "tree-trimming copy.jpeg": "Shrubs & Hedges",                                // tree/shrub trimming
+  // Landscaping & Beds — planting beds, rock/stone, landscape design
+  "553790281_122145606446813364_6347760948194781855_n.jpg": "Landscaping & Beds",
+  "642497226_17866258428584377_6620252600738237372_n.jpg": "Landscaping & Beds",
+  "Screenshot 2026-03-13 at 5.38.11 PM.png": "Landscaping & Beds",
+  "Screenshot 2026-03-13 at 5.38.18 PM.png": "Landscaping & Beds",
+  "Screenshot 2026-03-13 at 5.39.50 PM.png": "Landscaping & Beds",
 
-  // All only — don't fit a specific category (gutter cleaning, debris, etc.)
-  "604877457_122156142290813364_7557052745560944232_n.jpg": null,  // pile of cut branches
-  "607692932_122156292722813364_9190629053183440278_n.jpg": null,  // backyard with playset, leaves
-  "605545321_122156142224813364_8886699666884537428_n.jpg": null,  // boxwoods by fence (ambiguous)
-  "634363018_17864411427584377_5238400742585462716_n.jpg": null,   // sprinkler close-up
-  "640242015_122161095482813364_7471007148393653414_n.jpg": null,  // gutter close-up
-  "641130763_122161095410813364_3059119192937031637_n.jpg": null,  // roof/pool gutter
-  "641625752_122161095404813364_7142840818561380720_n.jpg": null,  // gutter with leaves
-  "624544491_122158814600813364_3752004700889406877_n.jpg": null,  // front lawn with palms (general)
-  "625091757_122158814594813364_8886346229310084474_n.jpg": null,  // front lawn with palms (general)
-  "641181665_17866103820584377_3295983278069066478_n.jpg": null,   // mowed lawn, distant (ambiguous)
+  // All only — doesn't clearly fit a specific category
+  "604534303_122155849184813364_67047708145723371_n.jpg": null,
+  "605664822_122156292788813364_9055083956354490192_n.jpg": null,
+  "607692932_122156292722813364_9190629053183440278_n.jpg": null,
+  "624544491_122158814600813364_3752004700889406877_n.jpg": null,
+  "625091757_122158814594813364_8886346229310084474_n.jpg": null,
+  "634363018_17864411427584377_5238400742585462716_n.jpg": null,
+  "640242015_122161095482813364_7471007148393653414_n.jpg": null,
+  "641130763_122161095410813364_3059119192937031637_n.jpg": null,
+  "641625752_122161095404813364_7142840818561380720_n.jpg": null,
 };
 
 export default function OurWorkPage() {

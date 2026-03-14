@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import LayoutClient from "@/components/LayoutClient";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -58,6 +59,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <LayoutClient>{children}</LayoutClient>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

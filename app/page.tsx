@@ -3,7 +3,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import CTAButton from "@/components/CTAButton";
-import { services } from "@/components/ServiceCard";
+import { services, newServices } from "@/components/ServiceCard";
+import type { ServiceData } from "@/components/ServiceCard";
 import HomeCarousel from "@/components/HomeCarousel";
 
 export const metadata: Metadata = {
@@ -31,6 +32,22 @@ const reviews = [
     quote: "Very professional, very dependable, great follow-up. I love the attention to detail.",
     name: "Verified Google Review",
   },
+];
+
+const allServices = [...services, ...newServices];
+function findService(anchor: string): ServiceData {
+  return allServices.find((s) => s.anchor === anchor)!;
+}
+
+const homepageServices = [
+  findService("mowing"),
+  findService("edging"),
+  findService("shrubs"),
+  findService("mulching"),
+  findService("tree-trimming"),
+  findService("maintenance"),
+  findService("leaf-removal"),
+  findService("landscape-bed-installation"),
 ];
 
 export default function HomePage() {
@@ -136,13 +153,12 @@ export default function HomePage() {
               Complete Lawn Care Services in Jacksonville
             </h2>
             <p className="mx-auto mt-3 text-center text-dark/70" style={{ fontSize: "15px", lineHeight: 1.4, maxWidth: "600px" }}>
-              From precise mowing and clean edging to mulching, pruning, and full
-              property cleanup, Mangrove Lawn Care keeps Jacksonville yards looking
-              their best year-round.
+              From mowing and edging to gutter cleaning, irrigation checkups, rock bed installation, and more. Mangrove Lawn Care handles it all.{" "}
+              <Link href="/services" className="font-semibold underline" style={{ color: "#2d5a27" }}>View all services</Link> to see the full list.
             </p>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4" style={{ gap: "30px" }}>
-            {services.map((s) => (
+            {homepageServices.map((s) => (
               <Link
                 key={s.title}
                 href={s.slug}

@@ -84,7 +84,7 @@ export default function ReviewsPage() {
       <section className="bg-forest py-20">
         <div className="mx-auto max-w-4xl px-4 text-center text-white lg:px-8">
           <h1 className="text-4xl font-bold sm:text-5xl">
-            What Jacksonville Homeowners Are Saying
+            What Jacksonville Homeowners Are Saying About Mangrove
           </h1>
           <p className="mt-4 text-lg text-white/85">
             We let our work and our clients do the talking.
@@ -124,7 +124,7 @@ export default function ReviewsPage() {
           {/* Read All Reviews Button */}
           <div className="mt-12 text-center">
             <a
-              href="https://www.google.com/maps/place/Mangrove+Lawn+and+Landscape+Management+LLC"
+              href="https://www.google.com/maps/place/Mangrove+Lawn+and+Landscape+Management+LLC/@30.2215215,-81.6576015,10z/data=!4m8!3m7!1s0x6230a9535428ea1d:0x14dad8c0c06e2831!8m2!3d30.2215214!4d-81.6576015!9m1!1b1!16s%2Fg%2F11zj2lyvff?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border-2 px-8 py-3.5 text-base font-semibold transition-colors hover:bg-forest hover:text-white hover:border-forest"
@@ -156,7 +156,7 @@ export default function ReviewsPage() {
               Get a Free Estimate
             </CTAButton>
             <Link
-              href="https://www.google.com/maps/place/Mangrove+Lawn+and+Landscape+Management+LLC"
+              href="https://www.google.com/maps/place/Mangrove+Lawn+and+Landscape+Management+LLC/@30.2215215,-81.6576015,10z/data=!4m8!3m7!1s0x6230a9535428ea1d:0x14dad8c0c06e2831!8m2!3d30.2215214!4d-81.6576015!9m1!1b1!16s%2Fg%2F11zj2lyvff?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border-2 border-white px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white hover:text-forest"

@@ -23,6 +23,10 @@ export default function LawnMowingPage() {
         "String trimming around trees, beds, fences, and landscape features",
         "Complete blowout of hard surfaces so your driveway and walkways are clean when we leave",
       ]}
+      callout={{
+        headline: "Every Visit Ends Clean",
+        body: "A lawn service is not finished when the mower stops. Every visit ends with a full blowout of your driveways, sidewalks, and hard surfaces so your property looks spotless when we leave. No clippings on the driveway. No mess left behind. Ever.",
+      }}
       whyItMatters={[
         "Jacksonville's warm, humid climate means grass grows aggressively for most of the year. Without a consistent mowing schedule, lawns become uneven, overgrown, and harder to manage over time. Grass that is allowed to grow too tall before cutting gets stressed, which weakens the root system and creates conditions for weeds and pests to take hold. Staying on a regular schedule keeps your lawn healthier, prevents it from ever getting out of control, and protects the long-term appearance of your property.",
         "Push mowers make a real difference too. Heavy commercial riding equipment compacts soil, leaves ruts along fence lines, and can scalp uneven terrain. Push mowers give a more precise, even cut that is kinder to your turf, your landscaping, and your property.",

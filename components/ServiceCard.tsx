@@ -35,15 +35,6 @@ export const services: ServiceData[] = [
     imagePosition: "center 60%",
   },
   {
-    title: "Blowing & Cleanup",
-    anchor: "cleanup",
-    slug: "/lawn-cleanup-jacksonville",
-    shortDesc: "We leave your property spotless at the end of every visit.",
-    fullDesc:
-      "We don't leave clippings on your driveway or sidewalk. Every visit ends with a full blowout so your property looks spotless when we're done.",
-    image: "cleanup.jpg",
-  },
-  {
     title: "Bush & Shrub Trimming",
     anchor: "shrubs",
     slug: "/shrub-trimming-jacksonville",
@@ -79,7 +70,7 @@ export const services: ServiceData[] = [
     shortDesc: "Tidy up low-hanging branches and overgrown limbs.",
     fullDesc:
       "We handle low-hanging branches, overgrown limbs near the roofline, and unruly growth at the yard's edge. Keeping your trees trimmed protects your property and keeps your yard looking clean and well-maintained.",
-    image: "tree-trimming.jpg",
+    image: "tree-trimming1.jpg",
     imagePosition: "center 20%",
   },
   {
@@ -91,6 +82,66 @@ export const services: ServiceData[] = [
     fullDesc:
       "Set it and forget it. We offer recurring weekly and bi-weekly maintenance plans so your lawn stays in top shape year-round. We'll recommend a schedule that fits your lawn's needs and your budget, no contracts required.",
     image: "maintenance-plans.jpg",
+  },
+];
+
+export const newServices: ServiceData[] = [
+  {
+    title: "Leaf Removal",
+    anchor: "leaf-removal",
+    slug: "/leaf-removal-jacksonville",
+    shortDesc: "Full leaf removal and yard cleanup so your property stays clean and tidy year-round.",
+    fullDesc: "Leaves pile up fast in Jacksonville. We provide complete leaf removal to keep your property clean, your grass healthy, and your yard looking well-maintained no matter the season.",
+    image: "leaf-removal.jpg",
+  },
+  {
+    title: "Gutter & Leaf Cleanup",
+    anchor: "gutter-cleaning",
+    slug: "/gutter-cleaning-jacksonville",
+    shortDesc: "Clogged gutters cause real damage. We clean them out completely so water flows the way it should.",
+    fullDesc: "When gutters fill up with leaves and debris, water has nowhere to go except over the edge or back toward your home. We provide thorough gutter cleaning and debris removal to protect your roof, fascia, and foundation.",
+    image: "gutter-cleaning.jpg",
+  },
+  {
+    title: "Irrigation System Checkups",
+    anchor: "irrigation-checkup",
+    slug: "/irrigation-checkup-jacksonville",
+    shortDesc: "Make sure your sprinkler system is covering your lawn evenly before the heat hits.",
+    fullDesc: "A sprinkler system that isn't working properly wastes water and quietly damages your lawn. We inspect, adjust, and test your system so it runs efficiently all year long.",
+    image: "irrigation-checkup.jpg",
+    imagePosition: "bottom",
+  },
+  {
+    title: "Tree Debris Removal",
+    anchor: "tree-debris-removal",
+    slug: "/tree-debris-removal-jacksonville",
+    shortDesc: "Tree company left a mess behind? We remove branches, logs, and debris so your yard is completely clear.",
+    fullDesc: "Branches, logs, sawdust piles, and scattered debris often get left behind after tree work. We provide professional tree debris removal and full yard cleanup so your property goes back to looking great.",
+    image: "tree-debris-removal.jpg",
+  },
+  {
+    title: "Weed Control",
+    anchor: "weed-control",
+    slug: "/weed-control-jacksonville",
+    shortDesc: "Persistent weeds in your lawn and beds? We get them under control so your grass and plants can thrive.",
+    fullDesc: "Jacksonville's warm climate is ideal for weed growth year-round. We provide targeted weed control in both lawn areas and beds to keep your property clean and your turf looking its best.",
+    image: "weed-control.jpg",
+  },
+  {
+    title: "Rock & Landscape Bed Installation",
+    anchor: "landscape-bed-installation",
+    slug: "/landscape-bed-installation-jacksonville",
+    shortDesc: "New rock, defined edging, and fresh bed layouts that give your property a sharp, low-maintenance look.",
+    fullDesc: "New rock, defined borders, and properly spaced plants give your yard a sharp, intentional appearance. We install landscape beds and rock features that improve curb appeal and add real value to your property.",
+    image: "landscape-bed-installation.jpg",
+  },
+  {
+    title: "Artificial Turf Debris Removal",
+    anchor: "artificial-turf-cleaning",
+    slug: "/artificial-turf-cleaning-jacksonville",
+    shortDesc: "Leaves, dirt, and debris building up on your artificial turf? We restore it to a clean, sharp appearance.",
+    fullDesc: "We provide professional artificial turf debris removal using commercial-grade equipment that clears buildup thoroughly without damaging the turf fibers.",
+    image: "artificial-turf-cleaning.jpg",
   },
 ];
 
