@@ -139,7 +139,7 @@ export default function HomePage() {
                 {item.icon}
               </div>
               <h3 className="text-xl font-bold text-dark">{item.title}</h3>
-              <p className="mt-2 text-dark/70">{item.desc}</p>
+              <p className="mt-2 text-dark/70 text-[15px] leading-[1.4] sm:text-base sm:leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
