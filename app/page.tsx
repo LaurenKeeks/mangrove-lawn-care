@@ -146,7 +146,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Snapshot */}
-      <section style={{ backgroundColor: "#f7f7f7", paddingTop: "100px", paddingBottom: "80px" }}>
+      <section className="pt-16 pb-12 sm:pt-[100px] sm:pb-[80px]" style={{ backgroundColor: "#f7f7f7" }}>
         <div className="mx-auto" style={{ maxWidth: "1300px", padding: "0 40px" }}>
           <div className="text-center">
             <h2 className="text-3xl font-bold text-dark sm:text-4xl">
@@ -193,7 +193,7 @@ export default function HomePage() {
 
       {/* Photo Carousel */}
       {galleryFiles.length > 0 && (
-        <section className="bg-white" style={{ padding: "100px 0" }}>
+        <section className="bg-white py-16 sm:py-[100px]">
           <div className="mx-auto" style={{ maxWidth: "1300px", padding: "0 40px" }}>
             <h2 className="text-center text-3xl font-bold text-dark sm:text-4xl">
               Our Work in Jacksonville &amp; St. Johns County
@@ -218,7 +218,7 @@ export default function HomePage() {
       )}
 
       {/* Social Proof Bar */}
-      <section className="py-20" style={{ backgroundColor: "#f5f5f5" }}>
+      <section className="py-16 sm:py-20" style={{ backgroundColor: "#f5f5f5" }}>
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-dark sm:text-4xl">
             Trusted by Jacksonville &amp; St. Johns County Homeowners
@@ -260,7 +260,7 @@ export default function HomePage() {
       </section>
 
       {/* About Teaser */}
-      <section className="bg-white" style={{ padding: "140px 0" }}>
+      <section className="bg-white py-16 sm:py-[140px]">
         <div className="mx-auto max-w-3xl px-4 text-center lg:px-8">
           <h2 className="text-3xl font-bold text-dark sm:text-4xl">
             Founded by Two Jacksonville Teens Who Wanted to Do It Right
