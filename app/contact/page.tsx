@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(27, 67, 50, 0.72)" }} />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white lg:px-8" style={{ paddingBottom: "60px" }}>
-          <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold sm:text-5xl">
             Get a Free Estimate
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
@@ -95,7 +95,7 @@ export default function ContactPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
             </svg>
-            Jacksonville, FL
+            St. Johns &amp; Jacksonville, FL
           </span>
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                     </svg>
                   </div>
-                  Jacksonville, FL
+                  St. Johns &amp; Jacksonville, FL
                 </div>
                 <a
                   href="https://www.facebook.com/Mangrovelawncare/photos"

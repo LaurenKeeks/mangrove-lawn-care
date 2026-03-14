@@ -49,8 +49,11 @@ export default function ServicesPage() {
       <section className="bg-forest pt-20 pb-14">
         <div className="mx-auto max-w-5xl px-4 text-center text-white lg:px-8">
           <h1 className="text-4xl font-bold sm:text-5xl">
-            Lawn Care Services in Jacksonville, FL
+            Lawn Care Services
           </h1>
+          <p className="mt-3 text-xl text-white/85 sm:text-2xl">
+            Jacksonville &amp; St. Johns County, FL
+          </p>
           <div className="mt-8">
             <CTAButton variant="white">
               Get a Free Estimate

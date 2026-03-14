@@ -21,16 +21,16 @@ export const metadata: Metadata = {
 
 const reviews = [
   {
-    quote: "They showed up on time, communicated clearly, and left the yard looking clean and sharp.",
-    name: "Jacksonville Homeowner",
+    quote: "Mangrove Lawn Care did a great job. They showed up on time, communicated clearly, and left the yard looking clean and sharp. Even better, they're local, which makes supporting them an easy choice. Highly recommend.",
+    name: "Sean Packer, Google Review",
   },
   {
-    quote: "Austin and Caeden go above and beyond and leave my lawn looking amazing. Hire them, you will not be disappointed.",
-    name: "Verified Google Review",
+    quote: "Very professional, very dependable, and great follow up. I love the attention to detail. With Mangrove I get the same team, someone who genuinely cares and does what they say they will do. I am so pleased.",
+    name: "Nellie M, Google Review",
   },
   {
-    quote: "Very professional, very dependable, great follow-up. I love the attention to detail.",
-    name: "Verified Google Review",
+    quote: "Extremely professional and flexible. Austin does an amazing job. Highly recommend.",
+    name: "Shaunn Lobo, Google Review",
   },
 ];
 
@@ -150,7 +150,7 @@ export default function HomePage() {
         <div className="mx-auto" style={{ maxWidth: "1300px", padding: "0 40px" }}>
           <div className="text-center">
             <h2 className="text-3xl font-bold text-dark sm:text-4xl">
-              Complete Lawn Care Services in Jacksonville
+              Complete Lawn Care in Jacksonville &amp; St. Johns County
             </h2>
             <p className="mx-auto mt-3 text-center text-dark/70" style={{ fontSize: "15px", lineHeight: 1.4, maxWidth: "600px" }}>
               From mowing and edging to gutter cleaning, irrigation checkups, rock bed installation, and more. Mangrove Lawn Care handles it all.{" "}
@@ -196,7 +196,7 @@ export default function HomePage() {
         <section className="bg-white" style={{ padding: "100px 0" }}>
           <div className="mx-auto" style={{ maxWidth: "1300px", padding: "0 40px" }}>
             <h2 className="text-center text-3xl font-bold text-dark sm:text-4xl">
-              Recent Lawn Care Projects Across Jacksonville
+              Our Work in Jacksonville &amp; St. Johns County
             </h2>
             <p className="mx-auto mt-3 text-center text-dark/70" style={{ fontSize: "15px", lineHeight: 1.4, maxWidth: "600px" }}>
               From routine maintenance to detailed landscape work, every property
@@ -221,7 +221,7 @@ export default function HomePage() {
       <section className="py-20" style={{ backgroundColor: "#f5f5f5" }}>
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-dark sm:text-4xl">
-            Trusted by Jacksonville Homeowners
+            Trusted by Jacksonville &amp; St. Johns County Homeowners
           </h2>
           <p className="mx-auto mt-3 text-center text-dark/70" style={{ fontSize: "15px", lineHeight: 1.4, maxWidth: "600px" }}>
             See what local homeowners are saying about Mangrove Lawn Care and the

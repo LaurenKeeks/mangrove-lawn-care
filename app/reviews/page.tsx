@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTAButton from "@/components/CTAButton";
 import ReviewGrid from "@/components/ReviewGrid";
+import type { Review } from "@/components/ReviewGrid";
 
 export const metadata: Metadata = {
   title: "Customer Reviews | Mangrove Lawn Care Jacksonville FL",
@@ -14,66 +15,100 @@ export const metadata: Metadata = {
   },
 };
 
-const reviews = [
+const reviews: Review[] = [
   {
     quote:
-      "They showed up on time, communicated clearly, and left the yard looking clean and sharp. Even better, they're local, which makes supporting them an easy choice. Highly recommend.",
-    name: "Jacksonville Homeowner",
+      "Mangrove Lawn Care did a great job. They showed up on time, communicated clearly, and left the yard looking clean and sharp. Even better, they're local, which makes supporting them an easy choice. Highly recommend.",
+    name: "Sean Packer",
   },
   {
     quote:
-      "The attention to detail is amazing! I have used a few companies since we moved back to Florida and the workmanship was non-existent. Austin and Caeden come when they say, go above and beyond and leave my lawn looking amazing! Hire them, you will not be disappointed.",
-    name: "Sarah M.",
+      "The attention to detail is amazing! I have used a few companies since we moved back to Florida and they were reputable companies. However the workmanship was non existent. Austin and Caeden come when they say, go above and beyond and leave my yard looking amazing! Hire them, you will not be disappointed.",
+    name: "Heather Zabinsky",
   },
   {
     quote:
       "Mangrove Lawn Care is excellent. My lawn looks much better after they started their service. They are reasonable, flexible and professional. Austin and Kaeden will take good care of your needs!",
-    name: "L.K., Local Guide",
+    name: "L K",
   },
   {
     quote:
-      "The two men showed up to my house and were extremely professional. I've had landscapers in the past who never showed up on time and scalped my lawn. Mangrove FAR exceeded what I had in the past and I would highly recommend these fellas.",
-    name: "Caden U.",
+      "The two men showed up to my house and were extremely professional. I've had landscapers in the past and they never showed up on time and when they did scalped my lawn. Mangrove FAR exceeded what I had in the past and would highly recommend these fellas.",
+    name: "Caden Upton",
   },
   {
     quote:
-      "Professional young men did an excellent job with our yard and even went above and beyond to trim an out-of-control bush growing at the river's edge. They responded quickly and arrived exactly when they said they would. I plan on using their services again.",
-    name: "David P.",
+      "Professional young men did an excellent job with our yard and even went above and beyond to trim an out of control bush growing at the rivers edge. They responded quickly to my text and arrived exactly when they said they would. I plan on using their services again.",
+    name: "clctrigirl",
   },
   {
     quote:
-      "Very professional, very dependable, and great follow-up. I love the attention to detail. I hired bigger companies in the past and always felt like I got a drive-by service with a new guy every time. With Mangrove I'm getting someone who genuinely cares and does what they say they're going to do. They've also done additional work at my request — trimming trees and laying mulch. I also appreciate that they use a push mower, which is much kinder to my lawn and vinyl fence.",
-    name: "Mark T.",
+      "Amazing service! We walked the property before the first cut, addressed our issues and specifications of how we wanted certain areas handled and have been so happy!",
+    name: "Nick DiNicola",
   },
   {
     quote:
-      "Amazing service! We walked the property before the first cut, addressed our issues and specifications, and have been so happy!",
-    name: "Nick D.",
+      "Very professional, very dependable, and great follow up. I love the attention to detail. I hired bigger companies in the past and always got a drive-by service. With Mangrove I get the same team, someone who genuinely cares and does what they say they will do. I am so pleased.",
+    name: "Nellie M",
   },
   {
     quote:
       "This company is the best! They go above and beyond what is asked of them. I highly recommend them to anyone needing total attention to detail for their lawn maintenance needs.",
-    name: "Jeanette R.",
+    name: "Jeanette Roseberry",
   },
   {
     quote:
       "Very polite and professional. Great communication, and came exactly when he said he would. Excellent service and clean up after.",
-    name: "Kimberly C.",
+    name: "Kimberly Churchill",
   },
   {
     quote:
       "Extremely professional and flexible. Austin does an amazing job. Highly recommend.",
-    name: "Shaunn L.",
+    name: "Shaunn Lobo",
+  },
+  {
+    quote:
+      "Mangrove landscaping does amazing job at keeping our lawn looking amazing!",
+    name: "Kimme Harrelson",
   },
   {
     quote:
       "Amazing service! Highly recommended for everyone! Everything looks perfect!",
-    name: "Aida S.",
+    name: "Aida Skriptsova",
   },
   {
     quote:
-      "Great communication. Happy to have them doing my yard for a while!",
-    name: "Ryan S.",
+      "Great communication. Happy to have them doing my yard for awhile!",
+    name: "ryan smithson",
+  },
+  {
+    quote:
+      "Very professional and reliable.",
+    name: "Matthew Lupo",
+  },
+  {
+    quote:
+      "They cleaned up my yard after fall and it was a complete makeover",
+    name: "Marshall Sadler",
+    source: "facebook",
+  },
+  {
+    quote:
+      "11/10. You won't be sorry. (Real client)",
+    name: "Ryan Smithson",
+    source: "facebook",
+  },
+  {
+    quote:
+      "Extremely professional and flexible. Austin does an amazing job. Highly recommend",
+    name: "Shaunn Lobo",
+    source: "facebook",
+  },
+  {
+    quote:
+      "Very polite and professional. Great communication, and came exactly when he said he would. Excellent service and clean up after.",
+    name: "Kimberly Berkey Churchill",
+    source: "facebook",
   },
 ];
 
@@ -84,7 +119,7 @@ export default function ReviewsPage() {
       <section className="bg-forest py-20">
         <div className="mx-auto max-w-4xl px-4 text-center text-white lg:px-8">
           <h1 className="text-4xl font-bold sm:text-5xl">
-            What Jacksonville Homeowners Are Saying About Mangrove
+            What Homeowners Are Saying About Mangrove
           </h1>
           <p className="mt-4 text-lg text-white/85">
             We let our work and our clients do the talking.
@@ -99,7 +134,7 @@ export default function ReviewsPage() {
               ))}
             </div>
             <p className="mt-2 text-white/70 text-sm font-sans">
-              Based on {reviews.length} Google Reviews
+              Based on 14 Google Reviews &amp; 4 Facebook Recommendations
             </p>
 
             {/* Google Badge */}

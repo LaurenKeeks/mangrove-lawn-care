@@ -40,7 +40,7 @@ export default function ServiceAreaPage() {
           <div className="absolute inset-0 bg-forest/60" />
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white lg:px-8">
-          <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold sm:text-5xl">
             Serving St. Johns County &amp; Jacksonville
           </h1>
           <p className="mt-4 text-lg text-white/90">

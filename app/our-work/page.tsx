@@ -99,7 +99,7 @@ export default function OurWorkPage() {
       <section className="bg-forest py-20">
         <div className="mx-auto max-w-4xl px-4 text-center text-white lg:px-8">
           <h1 className="text-4xl font-bold sm:text-5xl">
-            See Our Work Across Jacksonville
+            See Our Work Across Jacksonville &amp; St. Johns County
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/85">
             Every yard we touch gets the same level of care and attention to detail.

@@ -50,7 +50,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
   return (
     <>
       {/* Filter buttons */}
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
+      <div className="flex flex-wrap justify-center gap-3 mb-16">
         {FILTERS.map((cat) => (
           <button
             key={cat}

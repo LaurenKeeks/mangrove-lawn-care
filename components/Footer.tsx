@@ -38,7 +38,7 @@ export default function Footer() {
                 Reliable Lawn Care for Jacksonville Homes
               </p>
               <p className="text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
-                Serving Jacksonville, FL since 2023
+                Serving St. Johns &amp; Jacksonville, FL since 2023
               </p>
               <button
                 onClick={() => {
@@ -95,7 +95,7 @@ export default function Footer() {
               (904) 477-0490
             </a>
             <p className="mt-1 text-sm" style={{ color: "rgba(255,255,255,0.7)" }}>
-              Jacksonville, FL
+              St. Johns &amp; Jacksonville, FL
             </p>
             <a
               href="https://www.google.com/maps/place/Mangrove+Lawn+and+Landscape+Management+LLC"
