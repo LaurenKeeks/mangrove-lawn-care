@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 const areas = [
-  "All of Jacksonville, FL",
+  "St. Johns County",
+  "Ponte Vedra Beach",
   "Ponte Vedra",
   "Fleming Island",
   "Orange Park",
@@ -40,10 +41,10 @@ export default function ServiceAreaPage() {
         </div>
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white lg:px-8">
           <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
-            Serving Jacksonville, FL and Surrounding Areas
+            Serving St. Johns County &amp; Jacksonville
           </h1>
           <p className="mt-4 text-lg text-white/90">
-            Local lawn care for Jacksonville homeowners.
+            Local lawn care for St. Johns County and Jacksonville homeowners.
           </p>
         </div>
       </section>
@@ -55,7 +56,7 @@ export default function ServiceAreaPage() {
             Jacksonville&apos;s Lawn Care Crew
           </h2>
           <p className="mx-auto mt-4 text-left" style={{ maxWidth: "700px", fontSize: "18px", lineHeight: 1.8, color: "#2C2C2C" }}>
-            We serve residential homeowners across Duval and St. Johns County.
+            We serve residential homeowners across St. Johns County and Duval County.
             We know North Florida&apos;s climate, its grass types, and what it
             takes to keep a lawn looking sharp year-round. Not sure if we cover
             your area? Send us a message and we&apos;ll get back to you quickly.
@@ -66,11 +67,11 @@ export default function ServiceAreaPage() {
             <p className="text-forest font-semibold font-sans mb-4" style={{ fontSize: "12px", letterSpacing: "0.1em", textTransform: "uppercase" }}>
               Areas We Serve
             </p>
-            <div className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: "12px 32px" }}>
+            <div className="flex flex-wrap gap-3">
               {areas.map((area) => (
-                <div key={area} className="flex items-center gap-2.5">
+                <div key={area} className="flex items-center gap-2 rounded-full border border-forest/30 px-4 py-2" style={{ backgroundColor: "rgba(45, 90, 39, 0.06)" }}>
                   <svg
-                    className="h-4 w-4 flex-shrink-0 text-forest"
+                    className="h-3.5 w-3.5 flex-shrink-0 text-forest"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -87,7 +88,7 @@ export default function ServiceAreaPage() {
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     />
                   </svg>
-                  <span className="text-dark" style={{ fontSize: "16px" }}>{area}</span>
+                  <span className="text-dark font-medium" style={{ fontSize: "15px" }}>{area}</span>
                 </div>
               ))}
             </div>
@@ -97,7 +98,7 @@ export default function ServiceAreaPage() {
 
       {/* Google Map */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d224484.19765997!2d-81.66!3d30.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d300000!2d-81.4209!3d30.0999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus"
         width="100%"
         height="600"
         style={{ border: 0, display: "block" }}
