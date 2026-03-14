@@ -18,7 +18,7 @@ export default function ServiceFilter({
   return (
     <>
       {/* Filter tabs */}
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
+      <div className="flex flex-wrap justify-center gap-3 mb-16">
         {TABS.map((tab) => (
           <button
             key={tab}
