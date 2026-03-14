@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,6 +23,11 @@ export default function Navbar({
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   return (
     <nav className="sticky top-0 z-50 bg-white" style={{ borderBottom: "1px solid #e8e8e8" }}>
       <div className="mx-auto flex items-center justify-between px-6 py-3 lg:px-10">
@@ -37,7 +42,7 @@ export default function Navbar({
             className="w-auto"
             style={{ height: "44px" }}
           />
-          <span className="text-lg font-bold hidden sm:inline" style={{ color: "#2d5a27" }}>
+          <span className="text-lg font-bold" style={{ color: "#2d5a27" }}>
             Mangrove Lawn Care
           </span>
         </Link>

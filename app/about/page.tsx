@@ -85,7 +85,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative flex min-h-[650px] items-center justify-center bg-forest">
+      <section className="relative flex min-h-[450px] sm:min-h-[650px] items-center justify-center bg-forest">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/photos/hero/about-hero.jpg')" }}

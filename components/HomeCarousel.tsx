@@ -1,15 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Lightbox from "@/components/Lightbox";
+
+function useVisibleCount() {
+  const [count, setCount] = useState(4);
+  useEffect(() => {
+    function update() {
+      if (window.innerWidth < 640) setCount(1);
+      else if (window.innerWidth < 1024) setCount(2);
+      else setCount(4);
+    }
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+  return count;
+}
 
 export default function HomeCarousel({ images }: { images: string[] }) {
   const [offset, setOffset] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const visible = 4;
+  const visible = useVisibleCount();
   const gap = 30; // px
   const max = Math.max(0, images.length - visible);
+
+  // Clamp offset when visible count changes
+  useEffect(() => {
+    setOffset((o) => Math.min(o, max));
+  }, [max]);
 
   const prev = () => setOffset((o) => Math.max(0, o - 1));
   const next = () => setOffset((o) => Math.min(max, o + 1));

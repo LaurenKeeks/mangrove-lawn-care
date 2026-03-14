@@ -73,17 +73,17 @@ export default function HomePage() {
         >
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.45)" }} />
         </div>
-        <div className="relative z-10 mx-auto max-w-4xl px-4 pt-32 pb-24 text-center text-white">
+        <div className="relative z-10 mx-auto max-w-4xl px-4 pt-20 pb-16 sm:pt-32 sm:pb-24 text-center text-white">
           <img
             src="/logo.png"
             alt="Mangrove Lawn Care"
             className="mx-auto"
-            style={{ width: "80px", marginBottom: "12px", filter: "brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.4))" }}
+            style={{ width: "80px", marginBottom: "6px", filter: "brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.4))" }}
           />
           <p className="font-sans font-semibold" style={{ fontSize: "1rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#fff", textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
             Mangrove Lawn Care
           </p>
-          <h1 className="mt-3 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-2 text-4xl font-bold leading-tight sm:mt-3 sm:text-5xl lg:text-6xl">
             Jacksonville&apos;s Reliable Lawn Care Team
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 sm:text-xl">
@@ -103,7 +103,7 @@ export default function HomePage() {
       </section>
 
       {/* Value Proposition Strip */}
-      <section className="bg-white" style={{ padding: "120px 0" }}>
+      <section className="bg-white py-16 sm:py-[120px]">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-3 lg:px-8">
           {[
             {
