@@ -167,7 +167,7 @@ export default function HomePage() {
                 <img
                   src={`/photos/services/${s.image}`}
                   alt={s.title}
-                  className="h-[220px] w-full object-cover rounded-xl"
+                  className="h-[280px] w-full object-cover rounded-xl"
                   style={{ objectPosition: s.imagePosition || "center" }}
                 />
                 <div className="pt-2">
