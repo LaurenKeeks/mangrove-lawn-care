@@ -63,7 +63,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Cards with Filter */}
-      <section className="bg-white" style={{ padding: "60px 0 80px" }}>
+      <section className="bg-white pt-6 pb-20 md:pt-[60px] md:pb-[80px]">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <ServiceFilter
             lawnCards={lawnAndYardCare.map((service) => (

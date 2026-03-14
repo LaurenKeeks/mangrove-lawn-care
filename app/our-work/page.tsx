@@ -108,7 +108,7 @@ export default function OurWorkPage() {
       </section>
 
       {/* Photo Grid */}
-      <section className="bg-white pt-10 pb-20">
+      <section className="bg-white pt-4 pb-20 md:pt-10">
         <div className="mx-auto max-w-7xl px-2 lg:px-4">
           {files.length > 0 ? (
             <GalleryGrid photos={photos} />

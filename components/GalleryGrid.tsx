@@ -50,7 +50,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
   return (
     <>
       {/* Mobile dropdown */}
-      <div className="mb-12 md:hidden">
+      <div className="mb-6 md:hidden">
         <select
           value={active}
           onChange={(e) => handleFilter(e.target.value as GalleryFilter)}

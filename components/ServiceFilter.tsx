@@ -18,7 +18,7 @@ export default function ServiceFilter({
   return (
     <>
       {/* Mobile dropdown */}
-      <div className="mb-12 md:hidden">
+      <div className="mb-6 md:hidden">
         <select
           value={active}
           onChange={(e) => setActive(e.target.value as FilterTab)}
