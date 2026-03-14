@@ -75,8 +75,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <div className="py-5" style={{ backgroundColor: "#F4F7F4", borderBottom: "1px solid #e0e8e0" }}>
+      {/* Trust Bar — hidden on mobile */}
+      <div className="hidden md:block py-5" style={{ backgroundColor: "#F4F7F4", borderBottom: "1px solid #e0e8e0" }}>
         <div className="mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 text-sm font-semibold text-dark/80">
           <span className="inline-flex items-center gap-2">
             <svg className="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -104,8 +104,8 @@ export default function ContactPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
-            {/* Left: Contact Details + Steps */}
-            <div>
+            {/* Get in Touch — always first */}
+            <div className="order-1 lg:col-start-1">
               <h2 className="text-2xl font-bold text-dark">Get in Touch</h2>
               <p className="mt-3 text-dark/70" style={{ fontSize: "16px", lineHeight: 1.7 }}>
                 The easiest way to get started is to fill out the form or give us
@@ -146,30 +146,70 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <hr className="my-10" style={{ borderColor: "rgba(0,0,0,0.08)" }} />
+              {/* Divider + What happens next — visible on desktop only (moved below form on mobile) */}
+              <div className="hidden lg:block">
+                <hr className="my-10" style={{ borderColor: "rgba(0,0,0,0.08)" }} />
+                <div>
+                  <h3 className="text-lg font-bold text-dark font-sans">
+                    What happens next?
+                  </h3>
+                  <ol className="mt-5 space-y-4">
+                    {[
+                      { step: "1", text: "We\u2019ll respond within a few hours to schedule a time." },
+                      { step: "2", text: "We walk your property and discuss what you\u2019re looking for." },
+                      { step: "3", text: "You get a clear quote \u2014 no surprises, no pressure." },
+                    ].map((item) => (
+                      <li key={item.step} className="flex items-start gap-3">
+                        <div className="flex flex-shrink-0 items-center justify-center rounded-full text-white text-sm font-bold" style={{ width: "40px", height: "40px", backgroundColor: "#2d5a27" }}>
+                          {item.step}
+                        </div>
+                        <span className="text-dark/80 pt-2">{item.text}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
 
-              {/* What happens next */}
-              <div>
-                <h3 className="text-lg font-bold text-dark font-sans">
-                  What happens next?
-                </h3>
-                <ol className="mt-5 space-y-4">
-                  {[
-                    { step: "1", text: "We\u2019ll respond within a few hours to schedule a time." },
-                    { step: "2", text: "We walk your property and discuss what you\u2019re looking for." },
-                    { step: "3", text: "You get a clear quote \u2014 no surprises, no pressure." },
-                  ].map((item) => (
-                    <li key={item.step} className="flex items-start gap-3">
-                      <div className="flex flex-shrink-0 items-center justify-center rounded-full text-white text-sm font-bold" style={{ width: "40px", height: "40px", backgroundColor: "#2d5a27" }}>
-                        {item.step}
-                      </div>
-                      <span className="text-dark/80 pt-2">{item.text}</span>
-                    </li>
-                  ))}
-                </ol>
+                <a
+                  href="tel:9044770490"
+                  className="mt-10 block rounded-xl p-6 text-white transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "#2d5a27" }}
+                >
+                  <p className="text-sm font-medium text-white">Prefer to talk?</p>
+                  <p className="mt-1 text-lg font-bold">
+                    Call us directly &rarr; (904) 477-0490
+                  </p>
+                </a>
               </div>
+            </div>
 
-              {/* Call Us Callout */}
+            {/* Send Us a Message — second on mobile, right column on desktop */}
+            <div className="order-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 bg-white" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)", borderRadius: "12px", padding: "32px" }}>
+              <h2 className="mb-6 text-2xl font-bold text-dark">
+                Send Us a Message
+              </h2>
+              <EstimateForm />
+            </div>
+
+            {/* What happens next — third on mobile only */}
+            <div className="order-3 lg:hidden">
+              <h3 className="text-lg font-bold text-dark font-sans">
+                What happens next?
+              </h3>
+              <ol className="mt-5 space-y-4">
+                {[
+                  { step: "1", text: "We\u2019ll respond within a few hours to schedule a time." },
+                  { step: "2", text: "We walk your property and discuss what you\u2019re looking for." },
+                  { step: "3", text: "You get a clear quote \u2014 no surprises, no pressure." },
+                ].map((item) => (
+                  <li key={item.step} className="flex items-start gap-3">
+                    <div className="flex flex-shrink-0 items-center justify-center rounded-full text-white text-sm font-bold" style={{ width: "40px", height: "40px", backgroundColor: "#2d5a27" }}>
+                      {item.step}
+                    </div>
+                    <span className="text-dark/80 pt-2">{item.text}</span>
+                  </li>
+                ))}
+              </ol>
+
               <a
                 href="tel:9044770490"
                 className="mt-10 block rounded-xl p-6 text-white transition-opacity hover:opacity-90"
@@ -180,14 +220,6 @@ export default function ContactPage() {
                   Call us directly &rarr; (904) 477-0490
                 </p>
               </a>
-            </div>
-
-            {/* Right: Form */}
-            <div className="bg-white" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)", borderRadius: "12px", padding: "32px" }}>
-              <h2 className="mb-6 text-2xl font-bold text-dark">
-                Send Us a Message
-              </h2>
-              <EstimateForm />
             </div>
           </div>
         </div>
