@@ -50,7 +50,7 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* Areas Served */}
-      <section className="bg-cream pt-28 pb-20">
+      <section className="bg-cream pt-10 pb-20 md:pt-28">
         <div className="mx-auto max-w-5xl px-4 text-center lg:px-8">
           <h2 className="text-3xl font-bold text-dark sm:text-4xl">
             Jacksonville&apos;s Lawn Care Crew
@@ -62,8 +62,8 @@ export default function ServiceAreaPage() {
             your area? Send us a message and we&apos;ll get back to you quickly.
           </p>
 
-          {/* Areas list */}
-          <div className="mx-auto mt-16" style={{ maxWidth: "700px" }}>
+          {/* Areas list — hidden on mobile */}
+          <div className="hidden md:block mx-auto mt-16" style={{ maxWidth: "700px" }}>
             <p className="text-forest font-semibold font-sans mb-4" style={{ fontSize: "12px", letterSpacing: "0.1em", textTransform: "uppercase" }}>
               Areas We Serve
             </p>
