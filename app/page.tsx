@@ -266,7 +266,7 @@ export default function HomePage() {
             Founded by Two Jacksonville Teens Who Wanted to Do It Right
           </h2>
           <p className="mt-4 text-lg text-dark/70">
-            Mangrove Lawn Care was started in 2023 by Austin and Caeden, two
+            Mangrove Lawn Care was founded by Austin and Caeden, two
             Jacksonville teenagers who believed homeowners deserved more
             reliable, detail-focused lawn service. What began as a small
             neighborhood operation quickly grew through hard work, consistency,

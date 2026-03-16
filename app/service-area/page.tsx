@@ -52,7 +52,7 @@ export default function ServiceAreaPage() {
       {/* Areas Served */}
       <section className="bg-cream pt-10 pb-20 md:pt-28">
         <div className="mx-auto max-w-5xl px-4 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-dark sm:text-4xl">
+          <h2 className="text-2xl font-bold text-dark sm:text-4xl">
             Jacksonville&apos;s Lawn Care Crew
           </h2>
           <p className="mx-auto mt-4 text-left" style={{ maxWidth: "700px", fontSize: "18px", lineHeight: 1.8, color: "#2C2C2C" }}>
