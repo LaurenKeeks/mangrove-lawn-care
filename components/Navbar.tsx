@@ -48,7 +48,7 @@ export default function Navbar({
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-6 xl:flex">
           {navLinks.map((link) => {
             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
@@ -73,7 +73,7 @@ export default function Navbar({
         </div>
 
         {/* Desktop right: phone + CTA */}
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-4 xl:flex">
           <a
             href="tel:9044770490"
             className="text-base font-medium text-dark hover:text-forest"
@@ -91,7 +91,7 @@ export default function Navbar({
         {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 cursor-pointer"
+          className="xl:hidden p-2 cursor-pointer"
           aria-label="Toggle menu"
         >
           <svg
@@ -120,7 +120,7 @@ export default function Navbar({
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[60px] z-50 bg-white px-6 pt-6 pb-8 overflow-y-auto lg:hidden">
+        <div className="fixed inset-0 top-[60px] z-50 bg-white px-6 pt-6 pb-8 overflow-y-auto xl:hidden">
           {navLinks.map((link) => {
             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (

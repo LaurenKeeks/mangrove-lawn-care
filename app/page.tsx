@@ -263,14 +263,14 @@ export default function HomePage() {
       <section className="bg-white py-16 sm:py-[140px]">
         <div className="mx-auto max-w-3xl px-4 text-center lg:px-8">
           <h2 className="text-3xl font-bold text-dark sm:text-4xl">
-            Founded by Two Jacksonville Teens Who Wanted to Do It Right
+            Built on Doing It Right
           </h2>
           <p className="mt-4 text-lg text-dark/70">
-            Mangrove Lawn Care was founded by Austin and Caeden, two
-            Jacksonville teenagers who believed homeowners deserved more
-            reliable, detail-focused lawn service. What began as a small
-            neighborhood operation quickly grew through hard work, consistency,
-            and a commitment to doing every job the right way.
+            Mangrove Lawn Care was founded on a simple belief: Jacksonville
+            homeowners deserved more reliable, detail-focused lawn service.
+            What began as a small neighborhood operation quickly grew through
+            hard work, consistency, and a commitment to doing every job the
+            right way.
           </p>
           <div className="mt-8">
             <Link

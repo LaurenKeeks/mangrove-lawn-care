@@ -4,11 +4,11 @@ import CTAButton from "@/components/CTAButton";
 export const metadata: Metadata = {
   title: "About Mangrove Lawn Care | Jacksonville FL",
   description:
-    "Mangrove Lawn Care was founded in 2023 by two Jacksonville teenagers who believed homeowners deserved better. Learn our story.",
+    "Mangrove Lawn Care was founded by two Jacksonville locals who decided to build something real. Learn our story.",
   openGraph: {
     title: "About Mangrove Lawn Care | Jacksonville FL",
     description:
-      "Mangrove Lawn Care was founded in 2023 by two Jacksonville teenagers who believed homeowners deserved better.",
+      "Mangrove Lawn Care was founded by two Jacksonville locals who decided to build something real.",
   },
 };
 
@@ -107,11 +107,10 @@ export default function AboutPage() {
         <div style={{ maxWidth: "860px", margin: "0 auto", padding: "0 40px" }}>
           <div className="space-y-6" style={{ fontSize: "18px", lineHeight: 1.8, color: "#2C2C2C", borderLeft: "4px solid #2d5a27", paddingLeft: "20px" }}>
             <p>
-              Mangrove Lawn Care was founded in 2023 by Austin and Caeden, two
-              Jacksonville teenagers who decided to build something real while
-              still in high school. They saw a simple problem: homeowners were
-              paying good money for lawn care and getting inconsistent crews,
-              drive-by mows, and zero accountability.
+              Mangrove Lawn Care was founded by two Jacksonville locals who
+              decided to build something real. They saw a simple problem:
+              homeowners were paying good money for lawn care and getting
+              inconsistent crews, drive-by mows, and zero accountability.
             </p>
             <p>
               They built Mangrove to be different. No franchise backing, no
